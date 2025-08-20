@@ -7,4 +7,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: OutputCurrentDate
-          run: echo "Current date is: $(date)"
+          run: echo "Current date is:"

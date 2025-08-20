@@ -1,0 +1,10 @@
+name: WorkflowDateOutput
+
+on: push
+
+jobs:
+  JobDateOutput:
+      runs-on: ubuntu-latest
+      steps:
+        - name: OutputCurrentDate
+          run: echo "Current date is: $(date)"

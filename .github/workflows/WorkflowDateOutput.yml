@@ -6,5 +6,11 @@ jobs:
   JobDateOutput:
     runs-on: ubuntu-latest
     steps:
-      - name: OutputCurrentDate
+      - name: Print the current date
         run: date
+  JobDateOutput2:
+    needs: JobDateOutput
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the formatted date
+        run: date +"%Y-%m-%d %H:%M:%S"
